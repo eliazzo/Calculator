@@ -6,37 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="calculator">
-    <div id="row1">
-        <input type="text">
-        <input type="button" value="C">
-    </div>
-    <div id="row2">
-        <input type="button" value="1" class="col1">
-        <input type="button" value="2" class="col2">
-        <input type="button" value="3" class="col3">
-        <input type="button" value="/" class="col4">
-    </div>
-    <div id="row3">
-        <input type="button" value="4" class="col1">
-        <input type="button" value="5" class="col2">
-        <input type="button" value="6" class="col3">
-        <input type="button" value="-" class="col4">
-    </div>
-    <div id="row4">
-        <input type="button" value="7" class="col1">
-        <input type="button" value="8" class="col2">
-        <input type="button" value="9" class="col3">
-        <input type="button" value="+" class="col4">
-    </div>
-    <div id="row5">
-        <input type="button" value="." class="col1">
-        <input type="button" value="0" class="col2">
-        <input type="button" value="=" class="col3">
-        <input type="button" value="*" class="col4">
-    </div>
+        <div id="row1">
+            <input id="screen" type="text">
+            <input type="button" value="C" onclick="clearScreen()">
+        </div>
+        <div id="buttons">
+            <div id="row2">
+                <input type="button" value="1" class="col1" onclick="display('1')">
+                <input type="button" value="2" class="col2" onclick="display('2')">
+                <input type="button" value="3" class="col3" onclick="display('3')">
+                <input type="button" value="/" class="col4" onclick="display('/')">
+            </div>
+            <div id="row3">
+                <input type="button" value="4" class="col1" onclick="display('4')">
+                <input type="button" value="5" class="col2" onclick="display('5')">
+                <input type="button" value="6" class="col3" onclick="display('6')">
+                <input type="button" value="-" class="col4" onclick="display('-')">
+            </div>
+            <div id="row4">
+                <input type="button" value="7" class="col1" onclick="display('7')">
+                <input type="button" value="8" class="col2" onclick="display('8')">
+                <input type="button" value="9" class="col3" onclick="display('9')">
+                <input type="button" value="+" class="col4" onclick="display('+')">
+            </div>
+            <div id="row5">
+                <input type="button" value="." class="col1" onclick="display('.')">
+                <input type="button" value="0" class="col2" onclick="display('0')">
+                <input type="button" value="=" class="col3" onclick="calculate()">
+                <input type="button" value="*" class="col4" onclick="display('*')">
+            </div>
+        </div>
     </div>
     
 </body>
